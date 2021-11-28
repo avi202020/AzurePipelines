@@ -1,16 +1,7 @@
 name: $(Major).$(Minor).$(rev:r)  # build numbering format
 
-trigger:
-  branches:
-    include: [ main ] # branch names which will trigger a build
-  paths:
-    include: [ /Extensions/WikiPDFExport ] # file paths which must match to trigger a build, cannot be a variable
+trigger: None
 
-pr: # will trigger on PR
-  branches:
-    include: [ main ] # branch names which will trigger a build
-  paths:
-    include: [ /Extensions/WikiPDFExport ] # file paths which must match to trigger a build, cannot be a variable
 
 resources:
   repositories: # the test data
