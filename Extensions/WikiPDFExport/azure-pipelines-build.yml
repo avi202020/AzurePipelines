@@ -1,7 +1,6 @@
 name: $(Major).$(Minor).$(rev:r)  # build numbering format
 
-trigger: None
-
+trigger: none
 
 resources:
   repositories: # the test data
@@ -29,7 +28,6 @@ variables:
 stages:
 
   - stage: Test
-    dependsOn: Private
     jobs:
     - deployment: Private_Tests_Mac
       timeoutInMinutes: 0
